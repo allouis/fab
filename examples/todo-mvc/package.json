@@ -1,0 +1,22 @@
+{
+  "name": "fab-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Fabien O'Carroll <fabien@allou.is>",
+  "scripts": {
+    "build": "browserify --debug -e js/main.js -o js/bundle.js",
+    "watch": "watchify --debug -e js/main.js -o js/bundle.js"
+  },
+  "dependencies": {
+    "bel": "4.3.1",
+    "fab-app": "../../fab-app",
+    "fab-store": "../../fab-store",
+    "todomvc-app-css": "2.0.0",
+    "todomvc-common": "1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "13.0.0",
+    "watchify": "3.7.0"
+  }
+}

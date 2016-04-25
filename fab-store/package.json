@@ -1,0 +1,14 @@
+{
+  "name": "fab-store",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabien O'Carroll <fabien@allou.is>",
+  "license": "MIT",
+  "dependencies": {
+    "through2": "2.0.1"
+  }
+}

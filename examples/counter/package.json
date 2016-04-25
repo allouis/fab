@@ -1,0 +1,21 @@
+{
+  "name": "counter-example",
+  "scripts": {
+    "build": "browserify -e browser.js -o public/bundle.js",
+    "build-ws": "browserify -e browser-ws.js -o public/bundle.js",
+    "start": "node server-ws.js"
+  },
+  "author": "Fabien O'Carroll <fabien@allou.is>",
+  "license": "MIT",
+  "dependencies": {
+    "bel": "4.3.1",
+    "ecstatic": "1.4.0",
+    "fab-app": "../../fab-app",
+    "fab-store": "../../fab-store",
+    "fab-ws-adapter": "../../fab-ws-adapter",
+    "websocket-stream": "3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "13.0.0"
+  }
+}
