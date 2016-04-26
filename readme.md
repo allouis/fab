@@ -24,7 +24,7 @@ Returns a duplex stream that writes action events and reads state.
 Component is just a function that recieves two arguments, `state` and `dispatch`. `state` is the current state and `dispatch` is a helper for writing the action objects to be read from it (by the store for example) 
 
 A simple component can look like:
-```
+```javascript
 function component (state, dispatch) {
   var h1 = document.createElement('h1')  
   h1.textContent = 'Hello, ' + state.name
