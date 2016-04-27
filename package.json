@@ -18,11 +18,5 @@
   "bugs": {
     "url": "https://github.com/allouis/fab/issues"
   },
-  "homepage": "https://github.com/allouis/fab#readme",
-  "dependencies": {
-    "copy-event-attributes": "github:allouis/copy-event-attributes#v1.0.1",
-    "duplexify": "3.4.3",
-    "morphdom": "1.3.0",
-    "through2": "2.0.1"
-  }
+  "homepage": "https://github.com/allouis/fab#readme"
 }
