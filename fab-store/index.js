@@ -1,4 +1,4 @@
-var through = require('through2').obj
+var Transform = require('readable-stream/transform')
 exports = module.exports = createStore
 exports.createStore = createStore
 
@@ -7,10 +7,13 @@ function createStore(reducer, state, enhancer) {
     return enhancer(createStore)(reducer, state) 
   }
 
-  var store = through(function (action, enc, cb) {
-    state = reducer(state, action)
-    this.push(state)
-    cb()
+  var store = new Transform({
+    transform: function (action, enc, cb) {
+      state = reducer(state, action)
+      this.push(state)
+      cb()
+    },
+    objectMode: true
   })
 
   process.nextTick(function () {

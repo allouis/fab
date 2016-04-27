@@ -9,6 +9,6 @@
   "author": "Fabien O'Carroll <fabien@allou.is>",
   "license": "MIT",
   "dependencies": {
-    "through2": "2.0.1"
+    "readable-stream": "2.1.0"
   }
 }
