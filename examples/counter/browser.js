@@ -1,8 +1,9 @@
-var framework = require('fab-app')
+var fab = require('fab-app')
 var main = require('./components/main')
-var store = require('./store')()
 
-var app = framework(main /*, opts... */)
+var store = require('./store')
+
+var app = fab(main)
 
 store.pipe(app).pipe(store)
 

@@ -3,7 +3,7 @@ var ws = require('websocket-stream')
 var ecstatic = require('ecstatic')(__dirname + '/public')
 
 var wsStoreAdapter = require('fab-ws-adapter')
-var store = require('./store')()
+var store = require('./store')
 
 var server = http.createServer(ecstatic)
 
