@@ -5,5 +5,8 @@ var initialState = []
 
 var store = require('./store')(initialState)
 
-var app = fab(App, store)
+var app = fab(App)
+
+app.pipe(store).pipe(app)
+
 app.appendTo(document.body)
